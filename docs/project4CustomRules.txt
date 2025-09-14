@@ -1,0 +1,4 @@
+Custom Rules
+alert tcp any any -> 10.200.0.12 any (msg:"Nmap Xmas Scan"; flags:FPU; sid:10001; rev:1) 
+alert tcp any any -> 10.200.0.12 21 (msg: "FTP Connection to Web Server"; sid: 10002; rev:1) 
+alert tcp any any -> 10.200.0.12 any (msg: "NMAP Ping Sweep"; dsize:0; sid:10003; rev:1)
