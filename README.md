@@ -12,9 +12,9 @@ The solution was implemented on **pfSense** with **Snort** to detect, alert, and
 
 ├── configs/ # pfSense firewall rules, Snort configs
 
-├── docs/ # Reports, screenshots, diagrams
-
 ├── logs/ # Sample IDS alerts and logs
+
+├── docs/ # Reports, screenshots, diagrams
 
 └── README.md
 
