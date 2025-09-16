@@ -18,9 +18,6 @@ The solution was implemented on **pfSense** with **Snort** to detect, alert, and
 
 └── README.md
 
-markdown
-Copy code
-
 ---
 
 ## 🛠️ Tasks Performed
