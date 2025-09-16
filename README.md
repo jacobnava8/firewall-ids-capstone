@@ -23,21 +23,21 @@ The solution was implemented on **pfSense** with **Snort** to detect, alert, and
 ## 🛠️ Tasks Performed
 - **System Preparation**
   - Enabled **Network Adapter 4** on pfSense to allow internet access  
-  - Updated **pfSense** to the latest version:contentReference[oaicite:1]{index=1}  
+  - Updated **pfSense** to the latest version
 
 - **Snort Installation & Setup**
   - Installed **Snort** from pfSense Package Manager  
   - Enabled **Snort VRT** rules with Oinkmaster code  
-  - Added **Untrusted, Trusted, and DMZ interfaces** under Snort configuration:contentReference[oaicite:2]{index=2}  
+  - Added **Untrusted, Trusted, and DMZ interfaces** under Snort configuration
 
 - **Firewall Configuration**
-  - Created firewall rules to **block FTP traffic** from the Untrusted network to the DMZ:contentReference[oaicite:3]{index=3}  
+  - Created firewall rules to **block FTP traffic** from the Untrusted network to the DMZ
 
 - **Custom IDS Rules & Alerts**
   - Configured Snort to generate alerts for:  
     - Xmas scan from Kali (Untrusted → 10.200.0.12)  
     - FTP attempts from Kali (Untrusted → 10.200.0.12)  
-    - Nmap ping sweep from Kali (Untrusted → 10.200.0.12):contentReference[oaicite:4]{index=4}  
+    - Nmap ping sweep from Kali (Untrusted → 10.200.0.12)
 
 ---
 
@@ -63,7 +63,7 @@ The solution was implemented on **pfSense** with **Snort** to detect, alert, and
 
 ## 📊 Results
 - ✅ **Suspicious traffic logged** in Snort for Xmas scans, FTP attempts, and Nmap sweeps  
-- ✅ **Firewall blocked FTP traffic** from Untrusted → DMZ:contentReference[oaicite:5]{index=5}  
+- ✅ **Firewall blocked FTP traffic** from Untrusted → DMZ
 - ✅ Enhanced visibility into attacks on production/web servers  
 - ✅ Delivered a layered defense with **IDS detection** + **firewall enforcement**  
 
